@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Blog – Tesra Travel Agency</title>
+  <meta name="description" content="Read Tesra's travel blog for destination guides, packing tips, hidden gems, and inspiring stories from the road." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1 mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <button id="darkModeToggle"><i class="bi bi-moon-fill"></i> Dark</button>
+        <a href="tours.html" class="btn-primary-custom">Book Now</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.6)">Home</a></li><li class="breadcrumb-item active">Blog</li></ol></nav>
+    <h1>Travel Blog</h1>
+    <p style="color:rgba(255,255,255,0.75);max-width:520px;margin-top:0.5rem">Destination guides, packing lists, hidden gems, and stories from the road — written by our team of passionate explorers.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-5">
+      <!-- MAIN POSTS -->
+      <div class="col-lg-8">
+
+        <!-- Featured Post -->
+        <div class="blog-card mb-4 reveal">
+          <div class="blog-img" style="height:320px">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&q=75" alt="Serengeti sunrise" loading="lazy" />
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>Safari &amp; Wildlife</span> &nbsp;·&nbsp; June 10, 2026 &nbsp;·&nbsp; 8 min read</div>
+            <h3 style="font-family:var(--font-display);margin-bottom:0.5rem">Witnessing the Great Migration: A First-Timer's Complete Guide</h3>
+            <p>Every July, over 1.5 million wildebeest thunder across the Serengeti plains in one of nature's most spectacular events. Here's everything you need to know to witness it — timing, camps, what to pack, and the moments that will stop your breath.</p>
+            <a href="#" class="btn-primary-dark mt-3" style="font-size:0.88rem;padding:0.5rem 1.1rem"><i class="bi bi-arrow-right"></i> Read Full Article</a>
+          </div>
+        </div>
+
+        <!-- Post Grid -->
+        <div class="row g-4">
+          <div class="col-sm-6 reveal">
+            <div class="blog-card">
+              <div class="blog-img"><img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73c0e?w=600&q=75" alt="Santorini" loading="lazy" /></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Europe</span> &nbsp;·&nbsp; May 28, 2026</div>
+                <h4>Santorini Beyond the Instagram Shots</h4>
+                <p>Oia's sunsets are stunning, but the island's real soul lies in its volcanic wine trails, hidden coves, and working fishing villages.</p>
+                <a href="#" style="color:var(--color-accent);font-size:0.88rem;font-weight:600">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="blog-card">
+              <div class="blog-img"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=75" alt="Kyoto temple" loading="lazy" /></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Asia</span> &nbsp;·&nbsp; May 14, 2026</div>
+                <h4>Kyoto in Cherry Blossom Season: Timing is Everything</h4>
+                <p>The sakura window lasts just 10 days. We reveal which parks to visit, when to go, and how to avoid the crowds completely.</p>
+                <a href="#" style="color:var(--color-accent);font-size:0.88rem;font-weight:600">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="blog-card">
+              <div class="blog-img"><img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=75" alt="Nepal mountains" loading="lazy" /></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Adventure</span> &nbsp;·&nbsp; April 30, 2026</div>
+                <h4>Training for Everest Base Camp: 6-Month Plan</h4>
+                <p>EBC demands cardio endurance and mental grit. Our resident trek guide outlines the exact fitness routine she recommends to all clients.</p>
+                <a href="#" style="color:var(--color-accent);font-size:0.88rem;font-weight:600">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="blog-card">
+              <div class="blog-img"><img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600&q=75" alt="Maldives" loading="lazy" /></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Beach &amp; Island</span> &nbsp;·&nbsp; April 10, 2026</div>
+                <h4>Maldives on a Budget: Yes, It's Possible</h4>
+                <p>Overwater bungalows start at $4,200 pp, but there are guesthouses on local islands for under $80/night — with the same turquoise water.</p>
+                <a href="#" style="color:var(--color-accent);font-size:0.88rem;font-weight:600">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="blog-card">
+              <div class="blog-img"><img src="https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=600&q=75" alt="Marrakech" loading="lazy" /></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Africa</span> &nbsp;·&nbsp; March 22, 2026</div>
+                <h4>Marrakech in 72 Hours: The Perfect Itinerary</h4>
+                <p>The souks, rooftop riads, Atlas day trips, and the best mint tea you'll ever sip — all packed into three sensory days in Morocco.</p>
+                <a href="#" style="color:var(--color-accent);font-size:0.88rem;font-weight:600">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="blog-card">
+              <div class="blog-img"><img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=75" alt="Patagonia" loading="lazy" /></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span>Adventure</span> &nbsp;·&nbsp; March 5, 2026</div>
+                <h4>Patagonia's Torres del Paine: What Nobody Tells You</h4>
+                <p>Wind so strong it knocked us sideways, condors overhead, and glaciers that creak and groan. The real Patagonia is even better than the photos.</p>
+                <a href="#" style="color:var(--color-accent);font-size:0.88rem;font-weight:600">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="col-lg-4">
+        <!-- Search -->
+        <div class="form-card mb-4 reveal">
+          <h5 style="font-family:var(--font-display);margin-bottom:1rem">Search Articles</h5>
+          <div style="position:relative">
+            <i class="bi bi-search" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--color-muted)"></i>
+            <input type="text" class="form-control-custom" placeholder="Type a keyword…" style="padding-left:2.2rem" />
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="form-card mb-4 reveal">
+          <h5 style="font-family:var(--font-display);margin-bottom:1rem">Categories</h5>
+          <ul class="footer-links" style="color:var(--color-text)">
+            <li><a href="#" style="color:var(--color-text);display:flex;justify-content:space-between">Beach &amp; Island <span class="tag-pill">14</span></a></li>
+            <li><a href="#" style="color:var(--color-text);display:flex;justify-content:space-between">Safari &amp; Wildlife <span class="tag-pill">9</span></a></li>
+            <li><a href="#" style="color:var(--color-text);display:flex;justify-content:space-between">Cultural &amp; Heritage <span class="tag-pill">11</span></a></li>
+            <li><a href="#" style="color:var(--color-text);display:flex;justify-content:space-between">Adventure &amp; Trek <span class="tag-pill">8</span></a></li>
+            <li><a href="#" style="color:var(--color-text);display:flex;justify-content:space-between">City Breaks <span class="tag-pill">6</span></a></li>
+            <li><a href="#" style="color:var(--color-text);display:flex;justify-content:space-between">Travel Tips <span class="tag-pill">19</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Popular Posts -->
+        <div class="form-card mb-4 reveal">
+          <h5 style="font-family:var(--font-display);margin-bottom:1rem">Popular Posts</h5>
+          <div class="d-flex gap-3 mb-3" style="align-items:flex-start">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=100&q=75" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:var(--radius-sm);flex-shrink:0" loading="lazy" />
+            <div><a href="#" style="font-size:0.88rem;font-weight:600;color:var(--color-dark);line-height:1.3">Witnessing the Great Migration: A First-Timer's Guide</a><div style="font-size:0.75rem;color:var(--color-muted)">June 10, 2026</div></div>
+          </div>
+          <div class="d-flex gap-3 mb-3" style="align-items:flex-start">
+            <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=100&q=75" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:var(--radius-sm);flex-shrink:0" loading="lazy" />
+            <div><a href="#" style="font-size:0.88rem;font-weight:600;color:var(--color-dark);line-height:1.3">Kyoto in Cherry Blossom Season: Timing is Everything</a><div style="font-size:0.75rem;color:var(--color-muted)">May 14, 2026</div></div>
+          </div>
+          <div class="d-flex gap-3" style="align-items:flex-start">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=100&q=75" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:var(--radius-sm);flex-shrink:0" loading="lazy" />
+            <div><a href="#" style="font-size:0.88rem;font-weight:600;color:var(--color-dark);line-height:1.3">Patagonia's Torres del Paine: What Nobody Tells You</a><div style="font-size:0.75rem;color:var(--color-muted)">March 5, 2026</div></div>
+          </div>
+        </div>
+
+        <!-- Newsletter Sidebar -->
+        <div class="form-card reveal" style="background:var(--color-primary)">
+          <h5 style="font-family:var(--font-display);color:white;margin-bottom:0.5rem">Get Travel Inspiration</h5>
+          <p style="color:rgba(255,255,255,0.75);font-size:0.88rem;margin-bottom:1rem">Join 8,000+ explorers. New articles every fortnight, no spam.</p>
+          <form id="newsletterForm">
+            <input type="email" class="form-control-custom" placeholder="Your email" style="margin-bottom:0.75rem;background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.2);color:white" required />
+            <button type="submit" class="btn-primary-custom w-100" style="background:var(--color-accent);justify-content:center">Subscribe</button>
+          </form>
+          <div id="newsletterMsg" style="display:none;color:#90EE90;font-size:0.85rem;margin-top:0.75rem"><i class="bi bi-check-circle-fill"></i> You're subscribed!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4"><div class="footer-brand"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></div><p class="footer-desc">Crafting extraordinary journeys since 2006.</p><div class="footer-social"><a href="#" class="social-btn"><i class="bi bi-facebook"></i></a><a href="#" class="social-btn"><i class="bi bi-instagram"></i></a><a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a></div></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Explore</div><ul class="footer-links"><li><a href="destinations.html">Destinations</a></li><li><a href="tours.html">Tours</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Support</div><ul class="footer-links"><li><a href="contact.html">Contact</a></li><li><a href="faq.html">Help Center</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Contact</div><ul class="footer-links"><li><i class="bi bi-geo-alt-fill text-accent"></i> Nairobi, Kenya</li><li><a href="tel:+254700123456">+254 700 123 456</a></li><li><a href="mailto:hello@tesra.co">hello@tesra.co</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Tesra Travel Agency.</span><span>Made with <i class="bi bi-heart-fill text-accent"></i> for explorers</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

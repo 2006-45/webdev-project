@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Tesra Travel Agency</title>
+  <meta name="description" content="Get in touch with Tesra Travel Agency — book a consultation, ask a question, or find our Nairobi office location." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1 mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <button id="darkModeToggle"><i class="bi bi-moon-fill"></i> Dark</button>
+        <a href="tours.html" class="btn-primary-custom">Book Now</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.6)">Home</a></li><li class="breadcrumb-item active">Contact</li></ol></nav>
+    <h1>Get in Touch</h1>
+    <p style="color:rgba(255,255,255,0.75);max-width:520px;margin-top:0.5rem">Whether you have a quick question or want to start planning your dream trip, we're here for you.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- FORM -->
+      <div class="col-lg-7 reveal">
+        <div class="form-card">
+          <h3 style="font-family:var(--font-display);margin-bottom:0.25rem">Send Us a Message</h3>
+          <p class="text-muted mb-4" style="font-size:0.92rem">We reply within 2 business hours Mon–Sat, 8am–7pm EAT.</p>
+          <div id="formSuccess" class="alert alert-success" style="display:none">
+            <i class="bi bi-check-circle-fill"></i> <strong>Message sent!</strong> A consultant will be in touch within 2 hours.
+          </div>
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="name">Full Name *</label>
+                <input id="name" type="text" class="form-control-custom" placeholder="Amara Osei" />
+                <div class="error-msg">Please enter your full name (at least 2 characters).</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="email">Email Address *</label>
+                <input id="email" type="email" class="form-control-custom" placeholder="amara@example.com" />
+                <div class="error-msg">Please enter a valid email address.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="phone">Phone Number</label>
+                <input id="phone" type="tel" class="form-control-custom" placeholder="+254 7XX XXX XXX" />
+                <div class="error-msg">Please enter a valid phone number.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="subject">Subject *</label>
+                <select id="subject" class="form-control-custom">
+                  <option value="">Select a topic…</option>
+                  <option>General Enquiry</option>
+                  <option>Tour Booking</option>
+                  <option>Existing Booking Change</option>
+                  <option>Cancellation Request</option>
+                  <option>Visa Assistance</option>
+                  <option>Group Travel</option>
+                  <option>Corporate Travel</option>
+                  <option>Other</option>
+                </select>
+                <div class="error-msg">Please select a subject.</div>
+              </div>
+              <div class="col-12 mb-3">
+                <label class="form-label-custom" for="message">Message *</label>
+                <textarea id="message" class="form-control-custom" rows="5" placeholder="Tell us about your travel plans, questions, or how we can help…"></textarea>
+                <div class="error-msg">Message must be at least 20 characters.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-custom w-100" style="justify-content:center;padding:0.8rem;font-size:1rem">
+                  <i class="bi bi-send-fill"></i> Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="col-lg-5">
+        <!-- Contact Cards -->
+        <div class="row g-3 mb-4">
+          <div class="col-12 reveal">
+            <div class="form-card d-flex gap-3 align-items-start">
+              <div class="feature-icon blue" style="width:48px;height:48px;font-size:1.2rem;flex-shrink:0"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <h5 style="margin-bottom:0.25rem;font-size:1rem">Visit Our Office</h5>
+                <p class="text-muted" style="font-size:0.9rem;margin:0">3rd Floor, Westlands Commercial Centre<br>Waiyaki Way, Nairobi, Kenya</p>
+                <p class="text-muted" style="font-size:0.82rem;margin-top:0.3rem">Mon–Fri: 8am–6pm &nbsp;|&nbsp; Sat: 9am–3pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-12 reveal">
+            <div class="form-card d-flex gap-3 align-items-start">
+              <div class="feature-icon orange" style="width:48px;height:48px;font-size:1.2rem;flex-shrink:0"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <h5 style="margin-bottom:0.25rem;font-size:1rem">Call or WhatsApp</h5>
+                <a href="tel:+254700123456" style="color:var(--color-primary);font-weight:600;display:block">+254 700 123 456</a>
+                <a href="tel:+254733456789" style="color:var(--color-muted);font-size:0.9rem">+254 733 456 789</a>
+                <p class="text-muted" style="font-size:0.82rem;margin-top:0.3rem">24/7 emergency support for active bookings</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-12 reveal">
+            <div class="form-card d-flex gap-3 align-items-start">
+              <div class="feature-icon teal" style="width:48px;height:48px;font-size:1.2rem;flex-shrink:0"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <h5 style="margin-bottom:0.25rem;font-size:1rem">Email Us</h5>
+                <a href="mailto:hello@tesra.co" style="color:var(--color-primary);font-weight:600;display:block">hello@tesra.co</a>
+                <a href="mailto:bookings@tesra.co" style="color:var(--color-muted);font-size:0.9rem">bookings@tesra.co</a>
+                <p class="text-muted" style="font-size:0.82rem;margin-top:0.3rem">We reply within 2 hours on business days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="form-card reveal">
+          <h5 style="font-family:var(--font-display);margin-bottom:0.75rem">Follow Our Journey</h5>
+          <p class="text-muted" style="font-size:0.9rem;margin-bottom:1rem">Daily travel inspiration, behind-the-scenes content, and exclusive deals on social media.</p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#" class="btn-primary-dark" style="font-size:0.88rem;padding:0.45rem 1rem"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="#" class="btn-primary-dark" style="font-size:0.88rem;padding:0.45rem 1rem"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="#" class="btn-primary-dark" style="font-size:0.88rem;padding:0.45rem 1rem"><i class="bi bi-twitter-x"></i> Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAP EMBED -->
+    <div class="mt-5 reveal">
+      <h3 style="font-family:var(--font-display);margin-bottom:1rem">Find Us in Nairobi</h3>
+      <div style="border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-md)">
+        <iframe
+          title="Tesra Office Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808936788204!2d36.80291631533244!3d-1.2676979990641944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1726be7a8a63%3A0x91869e8b33c44c5!2sWestlands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1686842000000!5m2!1sen!2ske"
+          width="100%" height="380" style="border:0;display:block" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4"><div class="footer-brand"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></div><p class="footer-desc">Crafting extraordinary journeys since 2006.</p><div class="footer-social"><a href="#" class="social-btn"><i class="bi bi-facebook"></i></a><a href="#" class="social-btn"><i class="bi bi-instagram"></i></a><a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a></div></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Explore</div><ul class="footer-links"><li><a href="destinations.html">Destinations</a></li><li><a href="tours.html">Tours</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Support</div><ul class="footer-links"><li><a href="contact.html">Contact</a></li><li><a href="faq.html">Help Center</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Contact</div><ul class="footer-links"><li><i class="bi bi-geo-alt-fill text-accent"></i> Nairobi, Kenya</li><li><a href="tel:+254700123456">+254 700 123 456</a></li><li><a href="mailto:hello@tesra.co">hello@tesra.co</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Tesra Travel Agency.</span><span>Made with <i class="bi bi-heart-fill text-accent"></i> for explorers</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
