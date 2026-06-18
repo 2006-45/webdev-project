@@ -1,7 +1,10 @@
-
+/* =============================================
+   Tesra Travel Agency – Main JavaScript
+   ============================================= */
 
 /* === Dark Mode Toggle === */
 const darkToggle = document.getElementById('darkModeToggle');
+const darkToggleMobile = document.getElementById('darkModeToggleMobile');
 const body = document.body;
 
 // Load saved preference
@@ -10,19 +13,26 @@ if (localStorage.getItem('darkMode') === 'enabled') {
   updateToggleBtn(true);
 }
 
-if (darkToggle) {
-  darkToggle.addEventListener('click', () => {
-    const isDark = body.classList.toggle('dark-mode');
-    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-    updateToggleBtn(isDark);
-  });
+function handleToggleClick() {
+  const isDark = body.classList.toggle('dark-mode');
+  localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+  updateToggleBtn(isDark);
 }
 
+if (darkToggle) darkToggle.addEventListener('click', handleToggleClick);
+if (darkToggleMobile) darkToggleMobile.addEventListener('click', handleToggleClick);
+
 function updateToggleBtn(isDark) {
-  if (!darkToggle) return;
-  darkToggle.innerHTML = isDark
-    ? '<i class="bi bi-sun-fill"></i> Light'
-    : '<i class="bi bi-moon-fill"></i> Dark';
+  if (darkToggle) {
+    darkToggle.innerHTML = isDark
+      ? '<i class="bi bi-sun-fill"></i> Light'
+      : '<i class="bi bi-moon-fill"></i> Dark';
+  }
+  if (darkToggleMobile) {
+    darkToggleMobile.innerHTML = isDark
+      ? '<i class="bi bi-sun-fill"></i>'
+      : '<i class="bi bi-moon-fill"></i>';
+  }
 }
 
 /* === Back to Top Button === */
