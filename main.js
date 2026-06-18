@@ -1,6 +1,4 @@
-/* =============================================
-   Tesra Travel Agency – Main JavaScript
-   ============================================= */
+
 
 /* === Dark Mode Toggle === */
 const darkToggle = document.getElementById('darkModeToggle');
