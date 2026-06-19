@@ -7,14 +7,14 @@
   <meta name="description" content="Read Tesra's travel blog for destination guides, packing tips, hidden gems, and inspiring stories from the road." />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="index.html"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <div class="d-flex align-items-center gap-2 order-lg-2"><button id="darkModeToggleMobile" class="d-lg-none"><i class="bi bi-moon-fill"></i></button><button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button></div>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-1 mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -161,15 +161,15 @@
           <h5 style="font-family:var(--font-display);margin-bottom:1rem">Popular Posts</h5>
           <div class="d-flex gap-3 mb-3" style="align-items:flex-start">
             <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=100&q=75" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:var(--radius-sm);flex-shrink:0" loading="lazy" />
-            <div><a href="#" style="font-size:0.88rem;font-weight:600;color:var(--color-dark);line-height:1.3">Witnessing the Great Migration: A First-Timer's Guide</a><div style="font-size:0.75rem;color:var(--color-muted)">June 10, 2026</div></div>
+            <div><a href="#" class="popular-post-link" style="font-size:0.88rem;font-weight:600;line-height:1.3">Witnessing the Great Migration: A First-Timer's Guide</a><div style="font-size:0.75rem;color:var(--color-muted)">June 10, 2026</div></div>
           </div>
           <div class="d-flex gap-3 mb-3" style="align-items:flex-start">
             <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=100&q=75" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:var(--radius-sm);flex-shrink:0" loading="lazy" />
-            <div><a href="#" style="font-size:0.88rem;font-weight:600;color:var(--color-dark);line-height:1.3">Kyoto in Cherry Blossom Season: Timing is Everything</a><div style="font-size:0.75rem;color:var(--color-muted)">May 14, 2026</div></div>
+            <div><a href="#" class="popular-post-link" style="font-size:0.88rem;font-weight:600;line-height:1.3">Kyoto in Cherry Blossom Season: Timing is Everything</a><div style="font-size:0.75rem;color:var(--color-muted)">May 14, 2026</div></div>
           </div>
           <div class="d-flex gap-3" style="align-items:flex-start">
             <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=100&q=75" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:var(--radius-sm);flex-shrink:0" loading="lazy" />
-            <div><a href="#" style="font-size:0.88rem;font-weight:600;color:var(--color-dark);line-height:1.3">Patagonia's Torres del Paine: What Nobody Tells You</a><div style="font-size:0.75rem;color:var(--color-muted)">March 5, 2026</div></div>
+            <div><a href="#" class="popular-post-link" style="font-size:0.88rem;font-weight:600;line-height:1.3">Patagonia's Torres del Paine: What Nobody Tells You</a><div style="font-size:0.75rem;color:var(--color-muted)">March 5, 2026</div></div>
           </div>
         </div>
 
@@ -203,6 +203,6 @@
 
 <button class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
