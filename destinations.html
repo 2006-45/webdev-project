@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations – Tesra Travel Agency</title>
+  <meta name="description" content="Browse 85+ breathtaking destinations handpicked by Tesra experts — beaches, safaris, cultural cities, and adventure treks." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></a>
+    <div class="d-flex align-items-center gap-2 order-lg-2"><button id="darkModeToggleMobile" class="d-lg-none"><i class="bi bi-moon-fill"></i></button><button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button></div>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1 mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <button id="darkModeToggle"><i class="bi bi-moon-fill"></i> Dark</button>
+        <a href="tours.html" class="btn-primary-custom">Book Now</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.6)">Home</a></li><li class="breadcrumb-item active">Destinations</li></ol></nav>
+    <h1>Explore Destinations</h1>
+    <p style="color:rgba(255,255,255,0.75);max-width:520px;margin-top:0.5rem">From tropical archipelagos to ancient mountain cities — discover the world's most compelling places.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <!-- Search + Filter -->
+    <div class="row align-items-center mb-4 g-3">
+      <div class="col-md-5">
+        <div style="position:relative">
+          <i class="bi bi-search" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--color-muted)"></i>
+          <input id="destinationSearch" type="text" class="form-control" placeholder="Search destinations…" style="padding-left:2.2rem;border-radius:var(--radius-sm);border:1.5px solid var(--color-border)" />
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="filter-tabs mb-0">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="beach">Beach &amp; Island</button>
+          <button class="filter-btn" data-filter="safari">Safari</button>
+          <button class="filter-btn" data-filter="cultural">Cultural</button>
+          <button class="filter-btn" data-filter="adventure">Adventure</button>
+          <button class="filter-btn" data-filter="city">City Break</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Destination Cards -->
+    <div class="row g-4" id="destinationsGrid">
+
+      <div class="col-sm-6 col-lg-4" data-category="beach" data-name="Maldives Overwater Bungalow">
+        <div class="destination-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600&q=75" alt="Maldives" loading="lazy" />
+            <span class="card-badge">Beach</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Maldives</div>
+            <div class="card-title">Maldives Overwater Bungalow</div>
+            <div class="card-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>(402)</span></div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="card-price">$4,200 <span>/ person</span></div>
+              <a href="tours.html" class="btn-primary-custom" style="padding:0.4rem 1rem;font-size:0.85rem">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-category="safari" data-name="Masai Mara Great Migration">
+        <div class="destination-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=600&q=75" alt="Masai Mara" loading="lazy" />
+            <span class="card-badge">Safari</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Kenya</div>
+            <div class="card-title">Masai Mara Great Migration</div>
+            <div class="card-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>(567)</span></div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="card-price">$2,800 <span>/ person</span></div>
+              <a href="tours.html" class="btn-primary-custom" style="padding:0.4rem 1rem;font-size:0.85rem">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-category="cultural" data-name="Ancient Kyoto Tour">
+        <div class="destination-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=75" alt="Kyoto" loading="lazy" />
+            <span class="card-badge">Cultural</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Japan</div>
+            <div class="card-title">Ancient Kyoto Tour</div>
+            <div class="card-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>(248)</span></div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="card-price">$2,340 <span>/ person</span></div>
+              <a href="tours.html" class="btn-primary-custom" style="padding:0.4rem 1rem;font-size:0.85rem">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-category="adventure" data-name="Nepal Everest Base Camp Trek">
+        <div class="destination-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=75" alt="Everest Base Camp" loading="lazy" />
+            <span class="card-badge">Adventure</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Nepal</div>
+            <div class="card-title">Everest Base Camp Trek</div>
+            <div class="card-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>(189)</span></div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="card-price">$3,600 <span>/ person</span></div>
+              <a href="tours.html" class="btn-primary-custom" style="padding:0.4rem 1rem;font-size:0.85rem">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-category="beach" data-name="Santorini Caldera Escape">
+        <div class="destination-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73c0e?w=600&q=75" alt="Santorini" loading="lazy" />
+            <span class="card-badge">Bestseller</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Greece</div>
+            <div class="card-title">Santorini Caldera Escape</div>
+            <div class="card-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>(312)</span></div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="card-price">$1,890 <span>/ person</span></div>
+              <a href="tours.html" class="btn-primary-custom" style="padding:0.4rem 1rem;font-size:0.85rem">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-category="safari" data-name="Serengeti Wildlife Safari Tanzania">
+        <div class="destination-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=75" alt="Serengeti" loading="lazy" />
+            <span class="card-badge">Safari</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Tanzania</div>
+            <div class="card-title">Serengeti Wildlife Safari</div>
+            <div class="card-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>(422)</span></div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="card-price">$3,120 <span>/ person</span></div>
+              <a href="tours.html" class="btn-primary-custom" style="padding:0.4rem 1rem;font-size:0.85rem">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-category="city" data-name="Dubai City Luxury Break">
+        <div class="destination-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=75" alt="Dubai" loading="lazy" />
+            <span class="card-badge">City Break</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> UAE</div>
+            <div class="card-title">Dubai Luxury City Break</div>
+            <div class="card-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>(278)</span></div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="card-price">$2,650 <span>/ person</span></div>
+              <a href="tours.html" class="btn-primary-custom" style="padding:0.4rem 1rem;font-size:0.85rem">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-category="cultural" data-name="Marrakech Medina Morocco">
+        <div class="destination-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=600&q=75" alt="Marrakech" loading="lazy" />
+            <span class="card-badge">Cultural</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Morocco</div>
+            <div class="card-title">Marrakech Medina Discovery</div>
+            <div class="card-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>(201)</span></div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="card-price">$1,450 <span>/ person</span></div>
+              <a href="tours.html" class="btn-primary-custom" style="padding:0.4rem 1rem;font-size:0.85rem">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-category="adventure" data-name="Patagonia Torres del Paine Trekking">
+        <div class="destination-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=75" alt="Patagonia" loading="lazy" />
+            <span class="card-badge">Adventure</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Chile</div>
+            <div class="card-title">Patagonia Torres del Paine</div>
+            <div class="card-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>(143)</span></div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="card-price">$4,800 <span>/ person</span></div>
+              <a href="tours.html" class="btn-primary-custom" style="padding:0.4rem 1rem;font-size:0.85rem">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section style="background:var(--color-light);padding:60px 0">
+  <div class="container text-center">
+    <h2 class="section-title">Can't Find Your Dream Destination?</h2>
+    <p class="text-muted mb-4">Our consultants have access to 85+ destinations. Tell us where you've always wanted to go.</p>
+    <a href="contact.html" class="btn-primary-dark"><i class="bi bi-chat-dots-fill"></i> Talk to a Consultant</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></div>
+        <p class="footer-desc">Since 2006, Tesra has been turning travel dreams into extraordinary memories.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Careers</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Explore</div><ul class="footer-links"><li><a href="destinations.html">Destinations</a></li><li><a href="tours.html">Tours</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Support</div><ul class="footer-links"><li><a href="contact.html">Contact Us</a></li><li><a href="faq.html">Help Center</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Contact</div><ul class="footer-links"><li><i class="bi bi-geo-alt-fill text-accent"></i> Nairobi, Kenya</li><li><a href="tel:+254700123456"><i class="bi bi-telephone-fill text-accent"></i> +254 700 123 456</a></li><li><a href="mailto:hello@tesra.co"><i class="bi bi-envelope-fill text-accent"></i> hello@tesra.co</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Tesra Travel Agency.</span><span>Made with <i class="bi bi-heart-fill text-accent"></i> for explorers</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

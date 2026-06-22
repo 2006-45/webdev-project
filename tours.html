@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour Packages – Tesra Travel Agency</title>
+  <meta name="description" content="Browse Tesra's curated tour packages — luxury, adventure, cultural, and family holidays. Book online or speak to a consultant." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></a>
+    <div class="d-flex align-items-center gap-2 order-lg-2"><button id="darkModeToggleMobile" class="d-lg-none"><i class="bi bi-moon-fill"></i></button><button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button></div>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1 mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <button id="darkModeToggle"><i class="bi bi-moon-fill"></i> Dark</button>
+        <a href="tours.html" class="btn-primary-custom">Book Now</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.6)">Home</a></li><li class="breadcrumb-item active">Tour Packages</li></ol></nav>
+    <h1>Tour Packages</h1>
+    <p style="color:rgba(255,255,255,0.75);max-width:540px;margin-top:0.5rem">Hand-crafted experiences across the globe — choose your adventure and let us handle the rest.</p>
+  </div>
+</section>
+
+<!-- TOUR PACKAGES -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <!-- Package 1 -->
+      <div class="col-lg-6 reveal">
+        <div class="destination-card h-100" style="display:flex;flex-direction:row;overflow:hidden">
+          <div style="min-width:200px;height:auto;overflow:hidden">
+            <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&q=75" alt="Maldives" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+          </div>
+          <div class="card-body" style="flex:1">
+            <span class="tag-pill">Beach</span><span class="tag-pill">Luxury</span>
+            <div class="card-title mt-2">Maldives Overwater Escape</div>
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Maldives</div>
+            <ul class="text-muted mt-2 mb-3" style="font-size:0.85rem;padding-left:1rem">
+              <li>7 nights overwater bungalow</li>
+              <li>Daily breakfast & dinner included</li>
+              <li>Snorkelling & dolphin cruise</li>
+              <li>Seaplane transfer</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="card-price">$4,200 <span>/ person</span></div>
+              <a href="#bookingSection" class="btn-primary-custom" style="font-size:0.85rem;padding:0.4rem 1rem">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="col-lg-6 reveal">
+        <div class="destination-card h-100" style="display:flex;flex-direction:row;overflow:hidden">
+          <div style="min-width:200px;height:auto;overflow:hidden">
+            <img src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=400&q=75" alt="Masai Mara" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+          </div>
+          <div class="card-body" style="flex:1">
+            <span class="tag-pill">Safari</span><span class="tag-pill">Wildlife</span>
+            <div class="card-title mt-2">Masai Mara Migration Safari</div>
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Kenya</div>
+            <ul class="text-muted mt-2 mb-3" style="font-size:0.85rem;padding-left:1rem">
+              <li>5 nights luxury tented camp</li>
+              <li>All meals included</li>
+              <li>4 game drives with expert guide</li>
+              <li>Hot air balloon option available</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="card-price">$2,800 <span>/ person</span></div>
+              <a href="#bookingSection" class="btn-primary-custom" style="font-size:0.85rem;padding:0.4rem 1rem">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="col-lg-6 reveal">
+        <div class="destination-card h-100" style="display:flex;flex-direction:row;overflow:hidden">
+          <div style="min-width:200px;height:auto;overflow:hidden">
+            <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=400&q=75" alt="Kyoto" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+          </div>
+          <div class="card-body" style="flex:1">
+            <span class="tag-pill">Cultural</span><span class="tag-pill">Heritage</span>
+            <div class="card-title mt-2">Japan Cherry Blossom Tour</div>
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Japan</div>
+            <ul class="text-muted mt-2 mb-3" style="font-size:0.85rem;padding-left:1rem">
+              <li>10 nights (Tokyo, Kyoto, Osaka)</li>
+              <li>Ryokan &amp; boutique hotel stay</li>
+              <li>Tea ceremony &amp; temple tours</li>
+              <li>Shinkansen bullet train pass</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="card-price">$2,340 <span>/ person</span></div>
+              <a href="#bookingSection" class="btn-primary-custom" style="font-size:0.85rem;padding:0.4rem 1rem">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 4 -->
+      <div class="col-lg-6 reveal">
+        <div class="destination-card h-100" style="display:flex;flex-direction:row;overflow:hidden">
+          <div style="min-width:200px;height:auto;overflow:hidden">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400&q=75" alt="Nepal" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+          </div>
+          <div class="card-body" style="flex:1">
+            <span class="tag-pill">Adventure</span><span class="tag-pill">Trek</span>
+            <div class="card-title mt-2">Everest Base Camp Trek</div>
+            <div class="card-location"><i class="bi bi-geo-alt-fill"></i> Nepal</div>
+            <ul class="text-muted mt-2 mb-3" style="font-size:0.85rem;padding-left:1rem">
+              <li>14-day guided trek to EBC</li>
+              <li>Certified Sherpa guide</li>
+              <li>Tea house accommodation</li>
+              <li>Rescue insurance included</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="card-price">$3,600 <span>/ person</span></div>
+              <a href="#bookingSection" class="btn-primary-custom" style="font-size:0.85rem;padding:0.4rem 1rem">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHAT'S INCLUDED -->
+    <div class="row g-4 mt-2 mb-5">
+      <div class="col-12 text-center mb-2">
+        <span class="eyebrow">Every Package Includes</span>
+        <h2 class="section-title">Included in All Tours</h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="col-6 col-md-3 text-center reveal">
+        <div class="feature-icon blue mx-auto"><i class="bi bi-airplane-fill"></i></div>
+        <h5>Flights</h5>
+        <p class="text-muted" style="font-size:0.88rem">Return economy or business class from Nairobi</p>
+      </div>
+      <div class="col-6 col-md-3 text-center reveal">
+        <div class="feature-icon orange mx-auto"><i class="bi bi-building-fill"></i></div>
+        <h5>Accommodation</h5>
+        <p class="text-muted" style="font-size:0.88rem">Carefully vetted hotels, lodges, and unique stays</p>
+      </div>
+      <div class="col-6 col-md-3 text-center reveal">
+        <div class="feature-icon gold mx-auto"><i class="bi bi-person-badge-fill"></i></div>
+        <h5>Expert Guides</h5>
+        <p class="text-muted" style="font-size:0.88rem">Local certified guides fluent in English</p>
+      </div>
+      <div class="col-6 col-md-3 text-center reveal">
+        <div class="feature-icon teal mx-auto"><i class="bi bi-shield-fill-check"></i></div>
+        <h5>Travel Insurance</h5>
+        <p class="text-muted" style="font-size:0.88rem">Comprehensive coverage including medical evacuation</p>
+      </div>
+    </div>
+
+    <!-- BOOKING FORM -->
+    <div id="bookingSection" class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="form-card">
+          <h3 style="font-family:var(--font-display);margin-bottom:0.25rem">Request a Booking</h3>
+          <p class="text-muted mb-4" style="font-size:0.92rem">Fill in the form below and a consultant will confirm availability within 24 hours.</p>
+          <div id="bookingSuccess" style="display:none" class="alert alert-success"><i class="bi bi-check-circle-fill"></i> Booking request received! Our team will contact you within 24 hours.</div>
+          <form id="bookingForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="bkFirstName">First Name *</label>
+                <input id="bkFirstName" type="text" class="form-control-custom" placeholder="Amara" required />
+                <div class="invalid-feedback">Please enter your first name.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="bkLastName">Last Name *</label>
+                <input id="bkLastName" type="text" class="form-control-custom" placeholder="Osei" required />
+                <div class="invalid-feedback">Please enter your last name.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="bkEmail">Email Address *</label>
+                <input id="bkEmail" type="email" class="form-control-custom" placeholder="amara@example.com" required />
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="bkPhone">Phone Number *</label>
+                <input id="bkPhone" type="tel" class="form-control-custom" placeholder="+254 7XX XXX XXX" required />
+                <div class="invalid-feedback">Please enter your phone number.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="bkTour">Tour Package *</label>
+                <select id="bkTour" class="form-control-custom" required>
+                  <option value="">Select a package…</option>
+                  <option>Maldives Overwater Escape – $4,200</option>
+                  <option>Masai Mara Migration Safari – $2,800</option>
+                  <option>Japan Cherry Blossom Tour – $2,340</option>
+                  <option>Everest Base Camp Trek – $3,600</option>
+                  <option>Santorini Caldera Escape – $1,890</option>
+                  <option>Serengeti Wildlife Safari – $3,120</option>
+                  <option>Other (I'll describe below)</option>
+                </select>
+                <div class="invalid-feedback">Please select a tour.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="bkDate">Preferred Departure Date *</label>
+                <input id="bkDate" type="date" class="form-control-custom" required />
+                <div class="invalid-feedback">Please select a date.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="bkTravellers">Number of Travellers *</label>
+                <select id="bkTravellers" class="form-control-custom" required>
+                  <option value="">Select…</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+                </select>
+                <div class="invalid-feedback">Please select number of travellers.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label-custom" for="bkBudget">Budget Range (USD) *</label>
+                <select id="bkBudget" class="form-control-custom" required>
+                  <option value="">Select…</option>
+                  <option>Under $1,500</option>
+                  <option>$1,500 – $3,000</option>
+                  <option>$3,000 – $5,000</option>
+                  <option>$5,000 – $10,000</option>
+                  <option>Above $10,000</option>
+                </select>
+                <div class="invalid-feedback">Please select a budget range.</div>
+              </div>
+              <div class="col-12 mb-3">
+                <label class="form-label-custom" for="bkNotes">Special Requests or Notes</label>
+                <textarea id="bkNotes" class="form-control-custom" rows="3" placeholder="Dietary requirements, accessibility needs, preferred room type…"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-custom w-100" style="justify-content:center;padding:0.8rem">
+                  <i class="bi bi-send-fill"></i> Submit Booking Request
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4"><div class="footer-brand"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></div><p class="footer-desc">Crafting extraordinary journeys since 2006.</p><div class="footer-social"><a href="#" class="social-btn"><i class="bi bi-facebook"></i></a><a href="#" class="social-btn"><i class="bi bi-instagram"></i></a><a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a></div></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Explore</div><ul class="footer-links"><li><a href="destinations.html">Destinations</a></li><li><a href="tours.html">Tours</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Support</div><ul class="footer-links"><li><a href="contact.html">Contact Us</a></li><li><a href="faq.html">Help Center</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Contact</div><ul class="footer-links"><li><i class="bi bi-geo-alt-fill text-accent"></i> Nairobi, Kenya</li><li><a href="tel:+254700123456">+254 700 123 456</a></li><li><a href="mailto:hello@tesra.co">hello@tesra.co</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Tesra Travel Agency.</span><span>Made with <i class="bi bi-heart-fill text-accent"></i> for explorers</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
