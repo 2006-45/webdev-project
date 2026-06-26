@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Tesra Travel Agency</title>
+  <meta name="description" content="Browse Tesra's photo gallery — stunning images from our destinations across Africa, Asia, Europe, and beyond." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></a>
+    <div class="d-flex align-items-center gap-2 order-lg-2"><button id="darkModeToggleMobile" class="d-lg-none"><i class="bi bi-moon-fill"></i></button><button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button></div>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1 mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <button id="darkModeToggle"><i class="bi bi-moon-fill"></i> Dark</button>
+        <a href="tours.html" class="btn-primary-custom">Book Now</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.6)">Home</a></li><li class="breadcrumb-item active">Gallery</li></ol></nav>
+    <h1>Travel Gallery</h1>
+    <p style="color:rgba(255,255,255,0.75);max-width:520px;margin-top:0.5rem">Real images from real Tesra journeys — because seeing is believing.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <!-- Filter -->
+    <div class="filter-tabs mb-4">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="africa">Africa</button>
+      <button class="filter-btn" data-filter="asia">Asia</button>
+      <button class="filter-btn" data-filter="europe">Europe</button>
+      <button class="filter-btn" data-filter="adventure">Adventure</button>
+    </div>
+
+    <!-- Masonry Gallery -->
+    <div class="gallery-grid" id="galleryGrid">
+
+      <div class="gallery-item" data-category="africa">
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=75" alt="Serengeti sunrise" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="europe">
+        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73c0e?w=600&q=75" alt="Santorini sunset" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="asia">
+        <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=75" alt="Kyoto temple" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="adventure">
+        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=75" alt="Himalayas trekking" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="africa">
+        <img src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=600&q=75" alt="Masai Mara lions" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="asia">
+        <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600&q=75" alt="Maldives turquoise water" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="adventure">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=75" alt="Patagonia peaks" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="africa">
+        <img src="https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=600&q=75" alt="Marrakech medina" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="europe">
+        <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600&q=75" alt="European travel" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="asia">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=75" alt="Dubai skyline" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="adventure">
+        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=75" alt="Mountain landscape" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+      <div class="gallery-item" data-category="africa">
+        <img src="https://images.unsplash.com/photo-1466781783364-36c955e42a7f?w=600&q=75" alt="African sunset" loading="lazy" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-label="Image viewer">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="background:#0D1B2A;border:none">
+      <div class="modal-header" style="border:none;padding:0.5rem 1rem">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-2">
+        <img id="galleryModalImg" src="" alt="" class="img-fluid" style="border-radius:var(--radius-sm);max-height:80vh;object-fit:contain;width:100%" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gallery Filter JS (inline, gallery-specific) -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.filter;
+        galleryItems.forEach(item => {
+          item.style.display = (cat === 'all' || item.dataset.category === cat) ? '' : 'none';
+        });
+      });
+    });
+  });
+</script>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4"><div class="footer-brand"><i class="bi bi-globe-americas"></i> Tes<span>ra</span></div><p class="footer-desc">Crafting extraordinary journeys since 2006.</p><div class="footer-social"><a href="#" class="social-btn"><i class="bi bi-facebook"></i></a><a href="#" class="social-btn"><i class="bi bi-instagram"></i></a><a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a></div></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Explore</div><ul class="footer-links"><li><a href="destinations.html">Destinations</a></li><li><a href="tours.html">Tours</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Support</div><ul class="footer-links"><li><a href="contact.html">Contact</a></li><li><a href="faq.html">Help Center</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+      <div class="col-6 col-lg-2"><div class="footer-heading">Contact</div><ul class="footer-links"><li><i class="bi bi-geo-alt-fill text-accent"></i> Nairobi, Kenya</li><li><a href="tel:+254700123456">+254 700 123 456</a></li><li><a href="mailto:hello@tesra.co">hello@tesra.co</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Tesra Travel Agency.</span><span>Made with <i class="bi bi-heart-fill text-accent"></i> for explorers</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
