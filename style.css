@@ -1,4 +1,8 @@
+/* =============================================
+   Tesra Travel Agency – Main Stylesheet
+   ============================================= */
 
+/* --- Google Fonts Import --- */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 /* --- CSS Variables (Token System) --- */
@@ -456,7 +460,7 @@ footer {
   .navbar-brand { color: white !important; }
   .nav-link { color: rgba(255,255,255,0.8) !important; }
   .nav-link:hover { color: white !important; background: rgba(255,255,255,0.08); }
-  h1, h2, h3, h4 { color: white; }
+  h1, h2, h3, h4, h5 { color: white; }
   .destination-card, .testimonial-card, .form-card {
     background: #142233; border-color: rgba(255,255,255,0.08);
   }
