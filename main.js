@@ -1,39 +1,4 @@
 
-
-/* === Dark Mode Toggle === */
-const darkToggle = document.getElementById('darkModeToggle');
-const darkToggleMobile = document.getElementById('darkModeToggleMobile');
-const body = document.body;
-
-// Load saved preference
-if (localStorage.getItem('darkMode') === 'enabled') {
-  body.classList.add('dark-mode');
-  updateToggleBtn(true);
-}
-
-function handleToggleClick() {
-  const isDark = body.classList.toggle('dark-mode');
-  localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-  updateToggleBtn(isDark);
-}
-
-if (darkToggle) darkToggle.addEventListener('click', handleToggleClick);
-if (darkToggleMobile) darkToggleMobile.addEventListener('click', handleToggleClick);
-
-function updateToggleBtn(isDark) {
-  if (darkToggle) {
-    darkToggle.innerHTML = isDark
-      ? '<i class="bi bi-sun-fill"></i> Light'
-      : '<i class="bi bi-moon-fill"></i> Dark';
-  }
-  if (darkToggleMobile) {
-    darkToggleMobile.innerHTML = isDark
-      ? '<i class="bi bi-sun-fill"></i>'
-      : '<i class="bi bi-moon-fill"></i>';
-  }
-}
-
-/* === Back to Top Button === */
 const backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', () => {
   if (backToTop) {

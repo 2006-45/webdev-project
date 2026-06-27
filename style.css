@@ -1,4 +1,4 @@
-/* --- Google Fonts Import --- */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 /* --- CSS Variables (Token System) --- */
@@ -119,36 +119,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   padding: 0.45rem 1.1rem !important;
 }
 .nav-cta:hover { background: #c0661a !important; }
-
-/* Dark Mode Toggle */
-#darkModeToggle {
-  border: 1.5px solid var(--color-border);
-  background: transparent;
-  color: var(--color-text);
-  border-radius: 50px;
-  padding: 0.3rem 0.75rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all var(--transition);
-  display: flex; align-items: center; gap: 0.35rem;
-}
-#darkModeToggle:hover { background: var(--color-primary); color: white; border-color: var(--color-primary); }
-
-#darkModeToggleMobile {
-  border: 1.5px solid var(--color-border);
-  background: transparent;
-  color: var(--color-text);
-  border-radius: 50%;
-  width: 38px;
-  height: 38px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all var(--transition);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body.dark-mode #darkModeToggleMobile { border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.85); }
 
 /* =============================================
    HERO SECTION
@@ -472,32 +442,38 @@ footer {
 .error-msg.show { display: block; }
 
 /* =============================================
-   DARK MODE
+   DARK MODE (auto, follows system preference)
    ============================================= */
-body.dark-mode {
-  --color-text:   rgba(255,255,255,0.85);
-  --color-muted:  rgba(255,255,255,0.55);
-  --color-border: rgba(255,255,255,0.12);
-  background: #0D1B2A;
-  color: var(--color-text);
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-text:   rgba(255,255,255,0.85);
+    --color-muted:  rgba(255,255,255,0.55);
+    --color-border: rgba(255,255,255,0.12);
+    background: #0D1B2A;
+    color: var(--color-text);
+  }
+  .navbar { background: #0D1B2A !important; border-bottom-color: rgba(255,255,255,0.08); }
+  .navbar-brand { color: white !important; }
+  .nav-link { color: rgba(255,255,255,0.8) !important; }
+  .nav-link:hover { color: white !important; background: rgba(255,255,255,0.08); }
+  h1, h2, h3, h4 { color: white; }
+  .destination-card, .testimonial-card, .form-card {
+    background: #142233; border-color: rgba(255,255,255,0.08);
+  }
+  .card-title, .section-title { color: white; }
+  .bg-light-custom { background: #1a2d42; }
+  .form-control-custom { background: #1a2d42; border-color: rgba(255,255,255,0.15); color: white; }
+  .filter-btn { background: #142233; border-color: rgba(255,255,255,0.12); color: rgba(255,255,255,0.8); }
+  .hero-search { background: #142233; }
+  .hero-search .form-control, .hero-search .form-select { background: #1a2d42; border-color: rgba(255,255,255,0.15); color: white; }
+  .navbar-toggler-icon { filter: invert(1); }
+  .text-muted { color: rgba(255,255,255,0.55) !important; }
+  .blog-card .blog-body { background: #142233; }
+  .popular-post-link { color: white; }
+  .faq-accordion .accordion-button { background: #142233; color: white; }
+  .faq-accordion .accordion-item { border-color: rgba(255,255,255,0.08); }
+  .faq-accordion .accordion-body { background: #0D1B2A; }
 }
-body.dark-mode .navbar { background: #0D1B2A !important; border-bottom-color: rgba(255,255,255,0.08); }
-body.dark-mode .navbar-brand { color: white !important; }
-body.dark-mode .nav-link { color: rgba(255,255,255,0.8) !important; }
-body.dark-mode .nav-link:hover { color: white !important; background: rgba(255,255,255,0.08); }
-body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4 { color: white; }
-body.dark-mode .destination-card, body.dark-mode .testimonial-card, body.dark-mode .form-card {
-  background: #142233; border-color: rgba(255,255,255,0.08);
-}
-body.dark-mode .card-title, body.dark-mode .section-title { color: white; }
-body.dark-mode .bg-light-custom { background: #1a2d42; }
-body.dark-mode .form-control-custom { background: #1a2d42; border-color: rgba(255,255,255,0.15); color: white; }
-body.dark-mode .filter-btn { background: #142233; border-color: rgba(255,255,255,0.12); color: rgba(255,255,255,0.8); }
-body.dark-mode .hero-search { background: #142233; }
-body.dark-mode .hero-search .form-control, body.dark-mode .hero-search .form-select { background: #1a2d42; border-color: rgba(255,255,255,0.15); color: white; }
-body.dark-mode #darkModeToggle { border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.8); }
-body.dark-mode .navbar-toggler-icon { filter: invert(1); }
-body.dark-mode .text-muted { color: rgba(255,255,255,0.55) !important; }
 
 /* =============================================
    UTILITIES
@@ -601,9 +577,7 @@ body.dark-mode .text-muted { color: rgba(255,255,255,0.55) !important; }
 .blog-meta span { color: var(--color-accent); font-weight: 600; }
 .blog-card h4 { font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; line-height: 1.35; }
 .blog-card p { font-size: 0.9rem; color: var(--color-muted); }
-body.dark-mode .blog-card .blog-body { background: #142233; }
 .popular-post-link { color: var(--color-dark); }
-body.dark-mode .popular-post-link { color: white; }
 
 /* Gallery */
 .gallery-grid { columns: 3; gap: 1rem; }
@@ -644,9 +618,6 @@ body.dark-mode .popular-post-link { color: white; }
 .faq-accordion .accordion-button::after { filter: none; }
 .faq-accordion .accordion-item { border: 1px solid var(--color-border); border-radius: var(--radius-sm) !important; margin-bottom: 0.6rem; overflow: hidden; }
 .faq-accordion .accordion-body { font-size: 0.93rem; color: var(--color-muted); padding: 1rem 1.25rem; }
-body.dark-mode .faq-accordion .accordion-button { background: #142233; color: white; }
-body.dark-mode .faq-accordion .accordion-item { border-color: rgba(255,255,255,0.08); }
-body.dark-mode .faq-accordion .accordion-body { background: #0D1B2A; }
 
 /* =============================================
    RESPONSIVE ADJUSTMENTS
