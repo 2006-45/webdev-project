@@ -1,4 +1,6 @@
 
+
+/*  Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 /* --- CSS Variables (Token System) --- */
@@ -9,6 +11,7 @@
   --color-dark:       #0D1B2A;   /* near-black navy */
   --color-light:      #F5F8FA;   /* off-white */
   --color-white:      #FFFFFF;
+  --color-surface:    #FFFFFF;   /* card/component backgrounds — swaps in dark mode */
   --color-text:       #2C3E50;
   --color-muted:      #7F8C8D;
   --color-border:     #D5E8F0;
@@ -34,7 +37,7 @@ body {
   font-family: var(--font-body);
   font-size: 16px;
   color: var(--color-text);
-  background: var(--color-white);
+  background: var(--color-surface);
   line-height: 1.7;
 }
 img { max-width: 100%; height: auto; display: block; }
@@ -73,7 +76,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
    NAVBAR
    ============================================= */
 .navbar {
-  background: var(--color-white) !important;
+  background: var(--color-surface) !important;
   border-bottom: 1px solid var(--color-border);
   padding: 0.85rem 0;
   box-shadow: var(--shadow-sm);
@@ -164,7 +167,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
 /* Search Bar */
 .hero-search {
-  background: var(--color-white);
+  background: var(--color-surface);
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
   box-shadow: var(--shadow-lg);
@@ -244,7 +247,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: transform var(--transition), box-shadow var(--transition);
-  background: var(--color-white);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
 }
 .destination-card:hover {
@@ -307,7 +310,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
 /* Testimonial card */
 .testimonial-card {
-  background: var(--color-white);
+  background: var(--color-surface);
   border-radius: var(--radius-md);
   padding: 1.75rem;
   border: 1px solid var(--color-border);
@@ -329,7 +332,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 /* Filter Tabs */
 .filter-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
 .filter-btn {
-  background: var(--color-white);
+  background: var(--color-surface);
   border: 1.5px solid var(--color-border);
   color: var(--color-text);
   border-radius: 50px;
@@ -405,7 +408,7 @@ footer {
    FORMS
    ============================================= */
 .form-card {
-  background: var(--color-white);
+  background: var(--color-surface);
   border-radius: var(--radius-md);
   padding: 2rem 2.25rem;
   box-shadow: var(--shadow-md);
@@ -428,7 +431,7 @@ footer {
   font-size: 0.96rem;
   font-family: var(--font-body);
   color: var(--color-text);
-  background: var(--color-white);
+  background: var(--color-surface);
   transition: border-color var(--transition), box-shadow var(--transition);
   outline: none;
 }
@@ -444,36 +447,7 @@ footer {
 /* =============================================
    DARK MODE (auto, follows system preference)
    ============================================= */
-@media (prefers-color-scheme: dark) {
-  body {
-    --color-text:   rgba(255,255,255,0.85);
-    --color-muted:  rgba(255,255,255,0.55);
-    --color-border: rgba(255,255,255,0.12);
-    background: #0D1B2A;
-    color: var(--color-text);
-  }
-  .navbar { background: #0D1B2A !important; border-bottom-color: rgba(255,255,255,0.08); }
-  .navbar-brand { color: white !important; }
-  .nav-link { color: rgba(255,255,255,0.8) !important; }
-  .nav-link:hover { color: white !important; background: rgba(255,255,255,0.08); }
-  h1, h2, h3, h4, h5 { color: white; }
-  .destination-card, .testimonial-card, .form-card {
-    background: #142233; border-color: rgba(255,255,255,0.08);
-  }
-  .card-title, .section-title { color: white; }
-  .bg-light-custom { background: #1a2d42; }
-  .form-control-custom { background: #1a2d42; border-color: rgba(255,255,255,0.15); color: white; }
-  .filter-btn { background: #142233; border-color: rgba(255,255,255,0.12); color: rgba(255,255,255,0.8); }
-  .hero-search { background: #142233; }
-  .hero-search .form-control, .hero-search .form-select { background: #1a2d42; border-color: rgba(255,255,255,0.15); color: white; }
-  .navbar-toggler-icon { filter: invert(1); }
-  .text-muted { color: rgba(255,255,255,0.55) !important; }
-  .blog-card .blog-body { background: #142233; }
-  .popular-post-link { color: white; }
-  .faq-accordion .accordion-button { background: #142233; color: white; }
-  .faq-accordion .accordion-item { border-color: rgba(255,255,255,0.08); }
-  .faq-accordion .accordion-body { background: #0D1B2A; }
-}
+/* (dark mode styles moved to end of file — see bottom) */
 
 /* =============================================
    UTILITIES
@@ -572,7 +546,7 @@ footer {
 }
 .blog-card .blog-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
 .blog-card:hover .blog-img img { transform: scale(1.05); }
-.blog-card .blog-body { padding: 1.25rem 1.5rem 1.5rem; background: var(--color-white); }
+.blog-card .blog-body { padding: 1.25rem 1.5rem 1.5rem; background: var(--color-surface); }
 .blog-meta { font-size: 0.78rem; color: var(--color-muted); margin-bottom: 0.5rem; }
 .blog-meta span { color: var(--color-accent); font-weight: 600; }
 .blog-card h4 { font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; line-height: 1.35; }
@@ -607,7 +581,7 @@ footer {
   font-weight: 600;
   font-size: 0.97rem;
   color: var(--color-dark);
-  background: var(--color-white);
+  background: var(--color-surface);
   border-radius: var(--radius-sm) !important;
 }
 .faq-accordion .accordion-button:not(.collapsed) {
@@ -631,4 +605,35 @@ footer {
   .hero-search { flex-direction: column; }
   .hero-search .form-group { flex: 1 1 100%; }
   .footer-bottom { flex-direction: column; text-align: center; }
+}
+
+/* =============================================
+   DARK MODE (auto, follows system preference)
+   Placed at end of file so it always wins over
+   earlier same-specificity rules.
+   ============================================= */
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-text:    rgba(255,255,255,0.85);
+    --color-muted:   rgba(255,255,255,0.55);
+    --color-border:  rgba(255,255,255,0.12);
+    --color-surface: #142233;
+    background: #0D1B2A;
+    color: var(--color-text);
+  }
+  h1, h2, h3, h4, h5 { color: white; }
+  .navbar { background: #0D1B2A !important; border-bottom-color: rgba(255,255,255,0.08); }
+  .navbar-brand { color: white !important; }
+  .nav-link { color: rgba(255,255,255,0.8) !important; }
+  .nav-link:hover { color: white !important; background: rgba(255,255,255,0.08); }
+  .bg-light-custom { background: #1a2d42; }
+  .form-control-custom { background: #1a2d42; border-color: rgba(255,255,255,0.15); color: white; }
+  .hero-search .form-control, .hero-search .form-select { background: #1a2d42; border-color: rgba(255,255,255,0.15); color: white; }
+  .navbar-toggler-icon { filter: invert(1); }
+  .text-muted { color: rgba(255,255,255,0.55) !important; }
+  .popular-post-link { color: white; }
+  .blog-card h4, .card-title, .section-title, .team-card h4, .timeline-title { color: white; }
+  .faq-accordion .accordion-button { background: #142233; color: white; }
+  .faq-accordion .accordion-item { border-color: rgba(255,255,255,0.08); }
+  .faq-accordion .accordion-body { background: #0D1B2A; }
 }
